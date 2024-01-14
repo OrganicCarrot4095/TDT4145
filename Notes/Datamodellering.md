@@ -58,9 +58,6 @@
   <img src="../Pictures/Video%201/Relasjonsklasser.png" alt="Relasjonsklasser" width="500"/>
 </p>
 
-Selvfølgelig, jeg kan justere formateringen av tekstsnutten din for å gjøre den mer konsistent og ryddig. Her er den reviderte versjonen:
-
----
 
 - **Restriksjoner**:
   - **Kardinalitetsforhold**: Begrenser antall entiteter en entitet kan ha relasjon til.
@@ -88,11 +85,6 @@ Selvfølgelig, jeg kan justere formateringen av tekstsnutten din for å gjøre d
 <p align="center">
   <img src="../Pictures/Video%201/Forekomstniv%C3%A5.png" alt="Forekomstnivå" width="500"/>
 </p>
-
----
-
-Denne justeringen sørger for at alle bildene er riktig formatert og sentrert, med riktig høyde der det er nødvendig. Jeg har også lagt til noen små punkttegn for å forbedre lesbarheten i delen om sammenligning av restriksjoner.
-
 
 
 ## Om relasjoner
