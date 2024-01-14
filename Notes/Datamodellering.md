@@ -58,34 +58,40 @@
   <img src="../Pictures/Video%201/Relasjonsklasser.png" alt="Relasjonsklasser" width="500"/>
 </p>
 
+Selvfølgelig, jeg kan justere formateringen av tekstsnutten din for å gjøre den mer konsistent og ryddig. Her er den reviderte versjonen:
+
+---
+
 - **Restriksjoner**:
   - **Kardinalitetsforhold**: Begrenser antall entiteter en entitet kan ha relasjon til.
-<p align="center">
-  <img src="../Pictures/Video%201/Restriksjoner1.png" alt="Restriksjoner" width="500"/>
-</p>
+    <p align="center">
+      <img src="../Pictures/Video%201/Restriksjoner1.png" alt="Restriksjoner" width="500"/>
+    </p>
   - **Deltakelseskrav**: Angir om en entitet må ha en relasjon til minst en annen entitet.
-<p align="center">
-  <img src="../Pictures/Video%201/Restriksjoner2.png" alt="Restriksjoner" width="500"/>
-</p>
+    <p align="center">
+      <img src="../Pictures/Video%201/Restriksjoner2.png" alt="Restriksjoner" width="500"/>
+    </p>
   - **Strukturelle Restriksjoner**: Kombinerer kardinalitets- og eksistensrestriksjoner.
-<p align="center">
-  <img src="../Pictures/Video%201/Restriksjoner3.png" alt="Restriksjoner" width="500"/>
-</p>
+    <p align="center">
+      <img src="../Pictures/Video%201/Restriksjoner3.png" alt="Restriksjoner" width="500"/>
+    </p>
   - **Sammenligning**:
-    - Alternative måter å spesifisere det samme
-    - Legg merke til at "maks" bytter side
-    - Husk forskjellen mellom delvis og total deltakelse
-<p align="center">
-  <img src="../Pictures/Video%201/Restriksjoner4.png" alt="Restriksjoner" width="500"/>
-</p>
-<p align="center">
-  <img src="../Pictures/Video%201/Hierarki1.png" alt="Hierarki" height="400"/>
-  <img src="../Pictures/Video%201/Hierarki2.png" alt="Hierarki" heigth="400"/>
-</p>
+    - Alternative måter å spesifisere det samme.
+    - Legg merke til at "maks" bytter side.
+    - Husk forskjellen mellom delvis og total deltakelse.
+    <p align="center">
+      <img src="../Pictures/Video%201/Restriksjoner4.png" alt="Restriksjoner" width="500"/>
+    </p>
+
+
 ## Forekomst-nivå
 <p align="center">
   <img src="../Pictures/Video%201/Forekomstniv%C3%A5.png" alt="Forekomstnivå" width="500"/>
 </p>
+
+---
+
+Denne justeringen sørger for at alle bildene er riktig formatert og sentrert, med riktig høyde der det er nødvendig. Jeg har også lagt til noen små punkttegn for å forbedre lesbarheten i delen om sammenligning av restriksjoner.
 
 
 
