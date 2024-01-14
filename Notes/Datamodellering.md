@@ -9,7 +9,7 @@
 
  Prosessen går fra **Miniverden** til **Konseptuell Modell**, deretter til **Logisk Modell** og til slutt til **Fysisk Modell (Database)**.
 <p align="center">
-  <img src="../Pictures/Video%201/Modeller.png" alt="Modeller" width="500"/>
+  <img src="../Pictures/Datamodellering/Modeller.png" alt="Modeller" width="500"/>
 </p>
 
 
@@ -25,7 +25,7 @@
     - Strukturelle restriksjoner som påvirker hvordan dataene er organisert.
 - Dataoperasjoner som innsetting, endring, sletting og spørring er mindre relevant i denne fasen.
 <p align="center">
-  <img src="../Pictures/Video%201/Tankekart.png" alt="Tankekart" width="500"/>
+  <img src="../Pictures/Datamodellering/Tankekart.png" alt="Tankekart" width="500"/>
 </p>
 
 
@@ -34,13 +34,13 @@
   - Attributter henter verdier fra et **domene** (datatype).
   - Typer av attributter inkluderer enkle, sammensatte, avledede og nøkkelattributter (unike identifikatorer).
 <p align="center">
-  <img src="../Pictures/Video%201/Entitet%20eks.png" alt="Entitet" width="500"/>
+  <img src="../Pictures/Datamodellering/Entitet%20eks.png" alt="Entitet" width="500"/>
 </p>
 
 
 - **Entitetsklasse/-type**: En gruppe av likeartede entiteter som deler felles egenskaper. Alle entitetsklasser krever en unik identifikator (nøkkel).
 <p align="center">
-  <img src="../Pictures/Video%201/Entitetsklasse.png" alt="Entitetsklasse" width="500"/>
+  <img src="../Pictures/Datamodellering/Entitetsklasse.png" alt="Entitetsklasse" width="500"/>
 </p>
 
 
@@ -49,54 +49,54 @@
   - Kan ha egenskaper, lik entiteter, representert ved attributter.
   - Relasjonen eksisterer kun når de relevante entitetene er til stede.
 <p align="center">
-  <img src="../Pictures/Video%201/Relasjoner.png" alt="Relasjoner" width="500"/>
+  <img src="../Pictures/Datamodellering/Relasjoner.png" alt="Relasjoner" width="500"/>
 </p>
 
 
 - **Relasjonsklasser/-typer**: En samling av likeartede relasjoner mellom de samme entitetsklassene.
 <p align="center">
-  <img src="../Pictures/Video%201/Relasjonsklasser.png" alt="Relasjonsklasser" width="500"/>
+  <img src="../Pictures/Datamodellering/Relasjonsklasser.png" alt="Relasjonsklasser" width="500"/>
 </p>
 
 
 - **Restriksjoner**:
   - **Kardinalitetsforhold**: Begrenser antall entiteter en entitet kan ha relasjon til.
     <p align="center">
-      <img src="../Pictures/Video%201/Restriksjoner1.png" alt="Restriksjoner" width="500"/>
+      <img src="../Pictures/Datamodellering/Restriksjoner1.png" alt="Restriksjoner" width="500"/>
     </p>
   - **Deltakelseskrav**: Angir om en entitet må ha en relasjon til minst en annen entitet.
     <p align="center">
-      <img src="../Pictures/Video%201/Restriksjoner2.png" alt="Restriksjoner" width="500"/>
+      <img src="../Pictures/Datamodellering/Restriksjoner2.png" alt="Restriksjoner" width="500"/>
     </p>
   - **Strukturelle Restriksjoner**: Kombinerer kardinalitets- og eksistensrestriksjoner.
     <p align="center">
-      <img src="../Pictures/Video%201/Restriksjoner3.png" alt="Restriksjoner" width="500"/>
+      <img src="../Pictures/Datamodellering/Restriksjoner3.png" alt="Restriksjoner" width="500"/>
     </p>
   - **Sammenligning**:
     - Alternative måter å spesifisere det samme.
     - Legg merke til at "maks" bytter side.
     - Husk forskjellen mellom delvis og total deltakelse.
     <p align="center">
-      <img src="../Pictures/Video%201/Restriksjoner4.png" alt="Restriksjoner" width="500"/>
+      <img src="../Pictures/Datamodellering/Restriksjoner4.png" alt="Restriksjoner" width="500"/>
     </p>
 
 
 ## Forekomst-nivå
 <p align="center">
-  <img src="../Pictures/Video%201/Forekomstniv%C3%A5.png" alt="Forekomstnivå" width="500"/>
+  <img src="../Pictures/Datamodellering/Forekomstniv%C3%A5.png" alt="Forekomstnivå" width="500"/>
 </p>
 
 
 ## Om relasjoner
 - Relasjoner kan ha __egenskaper__ som modelleres som attributter
 <p align="center">
-  <img src="../Pictures/Video%201/OmRelasjoner1.png" alt="Om relasjoner" width="500"/>
+  <img src="../Pictures/Datamodellering/OmRelasjoner1.png" alt="Om relasjoner" width="500"/>
 </p>
 
 
 - Relasjonens __grad__ (degree) er antall entiteter som inngår
 <p align="center">
-  <img src="../Pictures/Video%201/OmRelasjoner2.png" alt="Om relasjoner" width="500"/>
+  <img src="../Pictures/Datamodellering/OmRelasjoner2.png" alt="Om relasjoner" width="500"/>
 </p>
 
 
@@ -118,22 +118,22 @@
 ## Enkelt Eksempel på en ER-modell: Emne-Student_Vurdering
 Denne modellen illustrerer en grunnleggende ER-struktur hvor studenter evalueres i forskjellige emner.
 <p align="center">
-  <img src="../Pictures/Video%201/Eks1.png" alt="Eksempel" width="500"/>
+  <img src="../Pictures/Datamodellering/Eks1.png" alt="Eksempel" width="500"/>
 </p>
 
 
 ## Rekursive Relasjonsklasser
 En interessant aspekt ved ER-modellering er rekursive relasjonsklasser, hvor samme entitetsklasse deltar flere ganger, men i ulike roller.
 <p align="center">
-  <img src="../Pictures/Video%201/RekRelkl.png" alt="Rekursive relasjonsklasser" width="500"/>
+  <img src="../Pictures/Datamodellering/RekRelkl.png" alt="Rekursive relasjonsklasser" width="500"/>
 </p>
 
 ## Eksempel: Ledelseshierarki
 Dette eksempelet viser et ledelseshierarki. For eksempel, Kong Harald (leder) for Statsminister Erna, som igjen er leder for ministerne Guri og Iselin. Iselin leder så statssekretærene Lucie og Lars.
 <p align="center">
   <div style="display: flex;>
-    <img src="../Pictures/Video%201/Hierarki1.png" alt="Hierarki" style="height: 250px;"/>
-    <img src="../Pictures/Video%201/Hierarki2.png" alt="Hierarki" style="height: 250px;"/>
+    <img src="../Pictures/Datamodellering/Hierarki1.png" alt="Hierarki" style="height: 250px;"/>
+    <img src="../Pictures/Datamodellering/Hierarki2.png" alt="Hierarki" style="height: 250px;"/>
   </div>
 </p>
 
@@ -142,15 +142,15 @@ Dette eksempelet viser et ledelseshierarki. For eksempel, Kong Harald (leder) fo
 ## Svake Entitetsklasser
 I en entitetsklasse, som er en samling unike entiteter, er det avgjørende at hver entitet kan identifiseres unikt. Et eksempel er kommuner og gater, hvor hver kommune har et unikt nummer og navn, og hver gate er unik innenfor sin kommune.
 <p align="center">
-  <img src="../Pictures/Video%201/SvakeEnt1.png" alt="Svake entitetsklasser1" width="500"/>
+  <img src="../Pictures/Datamodellering/SvakeEnt1.png" alt="Svake entitetsklasser1" width="500"/>
 </p>
 En utfordring oppstår når en entitetsklasse, som Gate, mangler en naturlig nøkkel.
 
 En løsning kan være å introdusere et ekstra nøkkelattributt, som GateNr, som gjør Gate til en regulær entitetsklasse. Dette krever ekstra administrasjon for å sikre unikhet på tvers av kommuner.
 <p align="center">
-  <img src="../Pictures/Video%201/SvakeEnt2.png" alt="Svake entitetsklasser2" width="500"/>
+  <img src="../Pictures/Datamodellering/SvakeEnt2.png" alt="Svake entitetsklasser2" width="500"/>
 </p>
 En alternativ løsning er å bruke en identifiserende relasjonsklasse for å definere svake entitetsklasser, som ikke har en egen nøkkel. Dette eliminerer behovet for et ekstra nøkkelattributt. For eksempel, i kombinasjon, blir KommuneNr og Gatenavn en unik identifikator.
 <p align="center">
-  <img src="../Pictures/Video%201/SvakeEnt3.png" alt="Svake entitetsklasser3" width="500"/>
+  <img src="../Pictures/Datamodellering/SvakeEnt3.png" alt="Svake entitetsklasser3" width="500"/>
 </p>
