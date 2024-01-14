@@ -110,6 +110,24 @@
   7. Vurder og juster modellen etter behov.
 
 
+## Enkelt eksempel på en ER-modell: Emne-Student_Vurdering
+<p align="center">
+  <img src="../Pictures/Video%201/Eks1.png" alt="Eksempel" width="500"/>
+</p>
 
+
+## Rekursive relasjonsklasser
+- Relasjonsklasser der samme entitetsklasse deltar flere ganger
+- En entitetsklasse kan ha flere _roller_ i relasjonsklassen
+<p align="center">
+  <img src="../Pictures/Video%201/RekRelkl.png" alt="Rekursive relasjonsklasser" width="500"/>
+</p>
+
+## Eksempel: Ledelseshierarki
+- Kong Harald er leder for statsminister ERna som er  leder for kunnskaps- og integreringsminister Guri og næringsminister Iselin. Iselin er leder for statssekretærene Lucie og Lars
+<p align="center">
+  <img src="../Pictures/Video%201/Hierarki1.png" alt="Hierarki" height="400"/>
+  <img src="../Pictures/Video%201/Hierarki2.png" alt="Hierarki" heigth="400"/>
+</p>
 
   
