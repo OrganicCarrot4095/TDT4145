@@ -1,3 +1,5 @@
+# Datamodellering med ER-modeller
+
 ## Fra "Miniverden" til Realisert Database
 - **Databasen som Modell** av en del av virkeligheten: Databaser er ikke bare lagringsenheter; de representerer en modell av virkelige prosesser og objekter.
 - **Miniverden** refererer til den spesifikke delen av virkeligheten vi ønsker å modellere. Denne tilnærmingen hjelper oss med å identifisere:
@@ -76,7 +78,10 @@
 <p align="center">
   <img src="../Pictures/Video%201/Restriksjoner4.png" alt="Restriksjoner" width="500"/>
 </p>
-
+<p align="center">
+  <img src="../Pictures/Video%201/Hierarki1.png" alt="Hierarki" height="400"/>
+  <img src="../Pictures/Video%201/Hierarki2.png" alt="Hierarki" heigth="400"/>
+</p>
 ## Forekomst-nivå
 <p align="center">
   <img src="../Pictures/Video%201/Forekomstniv%C3%A5.png" alt="Forekomstnivå" width="500"/>
@@ -110,24 +115,43 @@
   7. Vurder og juster modellen etter behov.
 
 
-## Enkelt eksempel på en ER-modell: Emne-Student_Vurdering
+# ER-modellering: Rekursive relasjonsklasser
+
+## Enkelt Eksempel på en ER-modell: Emne-Student_Vurdering
+Denne modellen illustrerer en grunnleggende ER-struktur hvor studenter evalueres i forskjellige emner.
 <p align="center">
   <img src="../Pictures/Video%201/Eks1.png" alt="Eksempel" width="500"/>
 </p>
 
 
-## Rekursive relasjonsklasser
-- Relasjonsklasser der samme entitetsklasse deltar flere ganger
-- En entitetsklasse kan ha flere _roller_ i relasjonsklassen
+## Rekursive Relasjonsklasser
+En interessant aspekt ved ER-modellering er rekursive relasjonsklasser, hvor samme entitetsklasse deltar flere ganger, men i ulike roller.
 <p align="center">
   <img src="../Pictures/Video%201/RekRelkl.png" alt="Rekursive relasjonsklasser" width="500"/>
 </p>
 
 ## Eksempel: Ledelseshierarki
-- Kong Harald er leder for statsminister ERna som er  leder for kunnskaps- og integreringsminister Guri og næringsminister Iselin. Iselin er leder for statssekretærene Lucie og Lars
-<p align="center">
-  <img src="../Pictures/Video%201/Hierarki1.png" alt="Hierarki" height="400"/>
-  <img src="../Pictures/Video%201/Hierarki2.png" alt="Hierarki" heigth="400"/>
-</p>
+Dette eksempelet viser et ledelseshierarki. For eksempel, Kong Harald (leder) for Statsminister Erna, som igjen er leder for ministerne Guri og Iselin. Iselin leder så statssekretærene Lucie og Lars.
+<div style="display: flex; justify-content: center;">
+  <img src="../Pictures/Video%201/Hierarki1.png" alt="Hierarki" style="height: 300px;"/>
+  <img src="../Pictures/Video%201/Hierarki2.png" alt="Hierarki" style="height: 300px;"/>
+</div>
 
-  
+
+# ER-modellering: Svake entitetsklasser
+
+## Svake Entitetsklasser
+I en entitetsklasse, som er en samling unike entiteter, er det avgjørende at hver entitet kan identifiseres unikt. Et eksempel er kommuner og gater, hvor hver kommune har et unikt nummer og navn, og hver gate er unik innenfor sin kommune.
+<p align="center">
+  <img src="../Pictures/Video%201/SvakeEnt1.png" alt="Svake entitetsklasser1" width="500"/>
+</p>
+En utfordring oppstår når en entitetsklasse, som Gate, mangler en naturlig nøkkel.
+
+En løsning kan være å introdusere et ekstra nøkkelattributt, som GateNr, som gjør Gate til en regulær entitetsklasse. Dette krever ekstra administrasjon for å sikre unikhet på tvers av kommuner.
+<p align="center">
+  <img src="../Pictures/Video%201/SvakeEnt2.png" alt="Svake entitetsklasser2" width="500"/>
+</p>
+En alternativ løsning er å bruke en identifiserende relasjonsklasse for å definere svake entitetsklasser, som ikke har en egen nøkkel. Dette eliminerer behovet for et ekstra nøkkelattributt. For eksempel, i kombinasjon, blir KommuneNr og Gatenavn en unik identifikator.
+<p align="center">
+  <img src="../Pictures/Video%201/SvakeEnt3.png" alt="Svake entitetsklasser3" width="500"/>
+</p>
