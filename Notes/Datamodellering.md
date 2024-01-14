@@ -131,8 +131,8 @@ En interessant aspekt ved ER-modellering er rekursive relasjonsklasser, hvor sam
 ## Eksempel: Ledelseshierarki
 Dette eksempelet viser et ledelseshierarki. For eksempel, Kong Harald (leder) for Statsminister Erna, som igjen er leder for ministerne Guri og Iselin. Iselin leder så statssekretærene Lucie og Lars.
 <div style="display: flex; justify-content: center;">
-  <img src="../Pictures/Video%201/Hierarki1.png" alt="Hierarki" style="height: 300px;"/>
-  <img src="../Pictures/Video%201/Hierarki2.png" alt="Hierarki" style="height: 300px;"/>
+  <img src="../Pictures/Video%201/Hierarki1.png" alt="Hierarki" style="height: 250px;"/>
+  <img src="../Pictures/Video%201/Hierarki2.png" alt="Hierarki" style="height: 250px;"/>
 </div>
 
 
