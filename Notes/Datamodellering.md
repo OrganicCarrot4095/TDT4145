@@ -152,3 +152,88 @@ En alternativ løsning er å bruke en identifiserende relasjonsklasse for å def
 <p align="center">
   <img src="../Pictures/Datamodellering/SvakeEnt3.png" alt="Svake entitetsklasser3" width="500"/>
 </p>
+
+## Enhanced ER (EER)
+Enhanced Entity-Relationship (EER)-modellering er en utvidelse av den standard Entity-Relationship (ER) modelleringen. EER inkluderer avanserte konsepter som spesialisering/generalisering, kategorier (union-typer), og arving av relasjonsklasser og attributter. La oss utdype disse konseptene:
+- **Standard ER Pluss:**
+  - **Støtte for Spesialisering/Generalisering:** Dette omfatter subklasser og superklasser.
+  - **Entitetsklasser med Entiteter fra Ulike Entitetsklasser**: Dette refererer til kategorier eller union-typer.
+  - **Arving**: Inkluderer arving av relasjonsklasser og attributter.
+
+## Spesialisering/Generalisering
+- **Spesialisering**: Prosessen med å definere underklasser for en gitt superklasse. Dette involverer å identifisere unike egenskaper som er spesifikke for subklassene.
+- **Generalisering**: Å samle lignende entitetsklasser som subklasser under en felles superklasse. Felles egenskaper er modellert på superklassenivå.
+- **Unike Egenskaper for Subklasser**: De egenskapene som er spesifikke for en subklasse, modelleres på subklassen.
+<p align="center">
+  <img src="../Pictures/Datamodellering/Spesialisering.png" alt="Spesialisering" width="500"/>
+</p>
+
+## Notasjon og Egenskaper
+- **Rolle i Subklasse**: En entitet i en subklasse har alltid en rolle som en del av superklassen, men med spesielle egenskaper.
+- **Arv av Attributter og Relasjoner**: Entiteter i subklasser arver alle attributter og relasjoner fra superklassen og kan ha sine egne unike attributter og relasjonsklasser.
+- **Deltakelse i Subklasser**: Ikke alle entiteter må være med i en subklasse, men det kan være et krav. En entitet kan tilhøre bare én eller flere subklasser.
+<p align="center">
+  <img src="../Pictures/Datamodellering/Notasjon.png" alt="Notasjon" width="500"/>
+</p>
+
+## Eksempel: Sykehus
+- Dette er et konkret eksempel som illustrerer bruken av EER-modellering i en praktisk sammenheng, som et sykehusdatabase-system.
+<p align="center">
+  <img src="../Pictures/Datamodellering/Sykehus.png" alt="Sykehus" width="500"/>
+</p>
+
+#### Forekomstdiagram
+<p align="center">
+  <img src="../Pictures/Datamodellering/ShusForekomst.png" alt="Forekomstdiagram" width="500"/>
+</p>
+
+## Restriksjoner i EER-modeller
+
+- **Deltakelse i Subklasse**: Kan være regelbasert eller brukerstyrt.
+<p align="center">
+  <img src="../Pictures/Datamodellering/Restriksjoner4-1.png" alt="Restriksjoner" width="500"/>
+</p>
+
+- **Subklassetyper**: Disjunkte (ikke-overlappende) eller overlappende.
+<p align="center">
+  <img src="../Pictures/Datamodellering/Restriksjoner4-2.1.png" alt="Restriksjoner" width="500"/>
+</p>
+
+- **Spesialiseringstype**: Delvis eller total (frivillig eller tvungen).
+<p align="center">
+  <img src="../Pictures/Datamodellering/Restriksjoner4-2.2.png" alt="Restriksjoner" width="500"/>
+</p>
+
+- **Kombinasjoner av Restriksjoner**: Det er fire hovedmuligheter for hvordan disse restriksjonene kan kombineres.
+<p align="center">
+  <img src="../Pictures/Datamodellering/Restriksjoner4-4.png" alt="Restriksjoner" width="500"/>
+</p>
+
+## Eksempel: Kameradatabase
+- Dette eksempelet viser hvordan en ER-modell kan konverteres til en EER-modell for å gi en mer detaljert og nøyaktig representasjon av virkeligheten.
+<p align="center">
+  <img src="../Pictures/Datamodellering/Kameradatabase-ER.png" alt="Kameradatabase" width="500"/>
+</p>
+<p align="center">
+  <img src="../Pictures/Datamodellering/Kameradatabase-EER.png" alt="Kameradatabase" width="500"/>
+</p>
+
+## Kategorier: Subklasser med flere superklasser
+- Mengden entiteter i en kategori er en delmengde av entitetene i superklassene
+- Kategorier kalles også union-klasse, derfor U i sirkelen
+- JuridiskPerson er enten Selskap eller Person
+- Selektiv aving
+<p align="center">
+  <img src="../Pictures/Datamodellering/Kategorier1.png" alt="Kategori" width="500"/>
+</p>
+
+## Kategorier: Restriksjoner: Delvis/Totalt
+<p align="center">
+  <img src="../Pictures/Datamodellering/Kategorier2.png" alt="Kategori" width="500"/>
+</p>
+
+## Total kategori eller Superklasse 
+<p align="center">
+  <img src="../Pictures/Datamodellering/Kategorier3.png" alt="Kategori" width="500"/>
+</p>
+Når alle entiteter i superklasene for en kategori må delta i kategorien bør vi vurdere om en løsning med spesialisering/generalisering blir bedre
