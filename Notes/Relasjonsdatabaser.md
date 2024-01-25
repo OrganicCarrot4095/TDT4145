@@ -122,3 +122,59 @@ Fler-verdiattributt må (vanligvis) håndteres i en egen tabell, med en fremmed-
   - Viktig grunnlag for å forstå hva man kan gjøre med tabeller, for normaliseringsteorien og for spørreoptimalisering og spørreutføring
 - Husk: Tabellforekomster er mengder av tuppler
 - Operatorene er _lukket_  over tabeller 
+  - Operanden(e) er tabell(er), resultatet er en ny tabell
+- Mengdeoperatorer:  
+  - Union, Snitt, mengdedifferande (minus), kartesisk produkt
+- Spesielle operatorer
+  - Seleksjon, prosjeksjon, join-operatorer
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/Relasjonsalgebra.png" alt="Modeller" width="500"/>
+</p>
+
+### Projeksjon
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="../Pictures/Relasjonsdatabaser/Projeksjon1.png" alt="Innhold1" style="height: 250px; margin-right: auto;"/>
+  <img src="../Pictures/Relasjonsdatabaser/Projeksjon2.png" alt="Innhold2" style="height: 250px;"/>
+</div>
+
+- Resultat-tabellen får nytt skjema
+  - Består av kolonnene (attributtene) i _attributtlisten_
+- Fjerner _duplikater_ i resultat-tabellen
+
+### Seleksjon
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="../Pictures/Relasjonsdatabaser/Seleksjon1.png" alt="Innhold1" style="height: 250px; margin-right: auto;"/>
+  <img src="../Pictures/Relasjonsdatabaser/Seleksjon2.png" alt="Innhold2" style="height: 250px;"/>
+</div>
+
+- Velger ut _rader_ (tuppler) som oppfyller en _logisk betingelse_
+  - Sammenligningsoperatorer + logiske konnektiver + parenteser
+- Resultat-tabellen har samme skjema som operand-tabellen
+
+### Kan kombinere operatorer
+
+**Q: Finn navn brukt på mopser og labradorer**
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="../Pictures/Relasjonsdatabaser/Komb1.png" alt="Innhold1" style="height: 250px; margin-right: auto;"/>
+  <img src="../Pictures/Relasjonsdatabaser/Komb2.png" alt="Innhold2" style="height: 250px;"/>
+</div>
+
+- Må passe på rekkefølgen av operatorene
+- Pass på ikke å fjerne data vi trenger senere
+
+### Mengdeoperatorene: Union, Snitt, Differanse
+
+- Arbeider på data fra to operand-tabeller
+- Kun mellom _union-kompatible_ tabeller:
+  - Samme _grad_ - dvs. like mange kolonner (attributter)
+  - _Korresponderende_ kolonner er def over samme datatype (domene)
+
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/Operatorer.png" alt="Modeller" width="500"/>
+</p>
+
+**Q: Navn brukt på både mops og schæfer**
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/Q1.png" alt="Modeller" width="500"/>
+</p>
