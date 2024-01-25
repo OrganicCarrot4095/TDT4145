@@ -133,8 +133,8 @@ Fler-verdiattributt må (vanligvis) håndteres i en egen tabell, med en fremmed-
 
 ### Projeksjon
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="../Pictures/Relasjonsdatabaser/Projeksjon1.png" alt="Innhold1" style="height: 250px; margin-right: auto;"/>
-  <img src="../Pictures/Relasjonsdatabaser/Projeksjon2.png" alt="Innhold2" style="height: 250px;"/>
+  <img src="../Pictures/Relasjonsdatabaser/Projeksjon1.png" alt="Innhold1" style="height: 200px; margin-right: auto;"/>
+  <img src="../Pictures/Relasjonsdatabaser/Projeksjon2.png" alt="Innhold2" style="height: 200px;"/>
 </div>
 
 - Resultat-tabellen får nytt skjema
@@ -143,8 +143,8 @@ Fler-verdiattributt må (vanligvis) håndteres i en egen tabell, med en fremmed-
 
 ### Seleksjon
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="../Pictures/Relasjonsdatabaser/Seleksjon1.png" alt="Innhold1" style="height: 250px; margin-right: auto;"/>
-  <img src="../Pictures/Relasjonsdatabaser/Seleksjon2.png" alt="Innhold2" style="height: 250px;"/>
+  <img src="../Pictures/Relasjonsdatabaser/Seleksjon1.png" alt="Innhold1" style="height: 200px; margin-right: auto;"/>
+  <img src="../Pictures/Relasjonsdatabaser/Seleksjon2.png" alt="Innhold2" style="height: 200px;"/>
 </div>
 
 - Velger ut _rader_ (tuppler) som oppfyller en _logisk betingelse_
@@ -190,7 +190,7 @@ Størrelsen på den resulterende tabellen i et kartesisk produkt er vanligvis st
 Selv om kartesiske produkter sjelden er målet for en spørring i seg selv, danner de grunnlaget for mer spesialiserte sammenstillingsoperatorer som join-operasjoner. Joins bruker en lignende mekanisme, men legger til kriterier som begrenser hvilke rader som skal kombineres, basert på relasjoner mellom dataene i tabellene.
 
 <p align="center">
-  <img src="../Pictures/Kartesisk/Q1.png" alt="Modeller" width="200"/>
+  <img src="../Pictures/Kartesisk.png" alt="Modeller" width="200"/>
 </p>
 
 **Eksempel på kartesisk produkt**
