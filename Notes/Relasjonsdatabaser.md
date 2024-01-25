@@ -190,7 +190,7 @@ Størrelsen på den resulterende tabellen i et kartesisk produkt er vanligvis st
 Selv om kartesiske produkter sjelden er målet for en spørring i seg selv, danner de grunnlaget for mer spesialiserte sammenstillingsoperatorer som join-operasjoner. Joins bruker en lignende mekanisme, men legger til kriterier som begrenser hvilke rader som skal kombineres, basert på relasjoner mellom dataene i tabellene.
 
 <p align="center">
-  <img src="../Pictures/Kartesisk.png" alt="Modeller" width="200"/>
+  <img src="../Pictures/Relasjonsdatabaser/Kartesisk.png" alt="Modeller" width="200"/>
 </p>
 
 **Eksempel på kartesisk produkt**
