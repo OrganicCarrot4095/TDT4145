@@ -256,3 +256,39 @@ Selv om kartesiske produkter sjelden er målet for en spørring i seg selv, dann
 </p>
 
 
+**Q: Bilder tatt av fotografen Wilse**
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/Q4.png" alt="Modeller" width="500"/>
+</p>
+
+### Omdøping og sortering
+- Vi har omdøpingsoperatoren $\rho$, som lager nye navn på tabell og kolonner
+- Det finnes også en sorteringsoperator som kan sortere i stigende (ASC) og synkende (DESC) rekkefølge.
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/Omdoping.png" alt="Modeller" width="500"/>
+</p>
+
+Her vil vi få en ny tabell kalt "Hundeeiere" som inneholder nundehavn og dens eiers navn. Tabellen vil være sortert i alfabetisk rekkefølge.
+
+### (INNER) JOIN filterer vekk rader
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/InnerJoin.png" alt="Modeller" width="500"/>
+</p>
+
+### Outer-join-operatorer
+- Får med alle rader i en eller begge operand-tabellene
+  - Left outer join: Alle rader fra "venstre-operanden"
+  - Right outer join: Alle rader fra "høyre-operanden"
+  - Full outer join: Alle rader fra begge operandene
+- Filterer _ikke_ bort rader slik som inner-join-operatorer
+- Rader som mangler "matchende" rad i den andre tabellen
+  - Kombineres med en rad der alle attributter er satt til NULL-verdi
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/OuterJoin.png" alt="Modeller" width="200"/>
+</p>
+
+**Q: Finn RegNr, Navn, Rase og Navn på alle offerpersoner for alle hunder**
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/Q5.png" alt="Modeller" width="200"/>
+</p>
+
