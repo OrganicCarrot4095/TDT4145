@@ -9,6 +9,7 @@
   <img src="../Pictures/Relasjonsdatabaser/Tabeller.png" alt="Modeller" width="500"/>
 </p>
 
+
 - Skjema ("intention") beskriver tabellen
     - Tabellnavn
     - Kolonner (attributter)
@@ -19,7 +20,7 @@
     - Rader/tuppler med lovlige verdier
 - Spesiell NULL-verdi
     - Der vi ikke har noen verdi ("ukjent eller mangler")
-- Fremmednøkkel
+- Fremmednøkkel (VIKTIG)
     - Verdi som viser til en rad (tuppel) i en annen tabell (ev.samme tabell)
 <p align="center">
   <img src="../Pictures/Relasjonsdatabaser/Skjema.png" alt="Modeller" width="500"/>
@@ -224,6 +225,11 @@ Selv om kartesiske produkter sjelden er målet for en spørring i seg selv, dann
 </p>
 
 ### Equijoin
+**Q: Bilder tatt av fotografen Wilse**
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/Q3.png" alt="Modeller" width="600"/>
+</p>
+
 - Kombinerer rader basert på _likhet_
   - Ett eller flere par av kolonner (fra hver sin operandtabell)
 - _Filterer vekk_ rader som ikke matcher
@@ -248,3 +254,5 @@ Selv om kartesiske produkter sjelden er målet for en spørring i seg selv, dann
   <p align="center">
   <img src="../Pictures/Relasjonsdatabaser/NatJoin.png" alt="Modeller" width="200"/>
 </p>
+
+
