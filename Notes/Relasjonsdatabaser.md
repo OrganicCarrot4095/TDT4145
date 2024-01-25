@@ -178,3 +178,35 @@ Fler-verdiattributt må (vanligvis) håndteres i en egen tabell, med en fremmed-
 <p align="center">
   <img src="../Pictures/Relasjonsdatabaser/Q1.png" alt="Modeller" width="500"/>
 </p>
+
+
+### Kartesisk produkt (X)
+Kartesisk produkt i en relasjonsdatabase sammenstiller data fra to tabeller ved å kombinere hver rad fra den ene tabellen med hver rad fra den andre. Dette skaper en "alle-mot-alle"-sammenstilling av radene, hvor resultatet inneholder hver mulig kombinasjon av rader fra de to tabellene. Denne metoden er ukritisk i sin natur og tar ikke hensyn til eventuelle relasjoner eller sammenhenger mellom dataene i de to tabellene.
+
+Resultattabellen som genereres ved et kartesisk produkt vil inneholde alle kolonnene fra begge tabellene. Dette betyr at hvis den første tabellen har kolonner A, B, C og den andre tabellen har kolonner X, Y, Z, vil den resulterende tabellen ha kolonner A, B, C, X, Y, Z. For å unngå forvirring, spesielt når de to tabellene har kolonner med samme navn, kan man prefikse kolonnenavnene med tabellnavnet, for eksempel Hund.Navn.
+
+Størrelsen på den resulterende tabellen i et kartesisk produkt er vanligvis stor, siden antallet rader vil være produktet av antall rader i de to opprinnelige tabellene. Hvis den første tabellen har r rader og den andre har s rader, vil resultatet bestå av r*s rader.
+
+Selv om kartesiske produkter sjelden er målet for en spørring i seg selv, danner de grunnlaget for mer spesialiserte sammenstillingsoperatorer som join-operasjoner. Joins bruker en lignende mekanisme, men legger til kriterier som begrenser hvilke rader som skal kombineres, basert på relasjoner mellom dataene i tabellene.
+
+<p align="center">
+  <img src="../Pictures/Kartesisk/Q1.png" alt="Modeller" width="200"/>
+</p>
+
+**Eksempel på kartesisk produkt**
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/EksKart.png" alt="Modeller" width="500"/>
+</p>
+
+
+
+### JOIN - Kritisk sammenstilling
+- Kartesisk produkt er _ukritisk_ sammenstiling
+  - Alle rader kombineres med alle rader, gir store resultattabeller
+- Join-operatorer kombinerer _relaterte_ rader
+  - Radene i resultat-tabellen oppfyller ein _join-betingelse_
+- Join-operatoren kan implementeres _mye billigere_ enn kartesisk produkt
+- EQUIJOIN - basert på likhet, vi kan også ha generaliserte join-betingelser (<>, <, >)
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/JOIN.png" alt="Modeller" width="500"/>
+</p>
