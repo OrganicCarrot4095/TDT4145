@@ -208,5 +208,43 @@ Selv om kartesiske produkter sjelden er målet for en spørring i seg selv, dann
 - Join-operatoren kan implementeres _mye billigere_ enn kartesisk produkt
 - EQUIJOIN - basert på likhet, vi kan også ha generaliserte join-betingelser (<>, <, >)
 <p align="center">
-  <img src="../Pictures/Relasjonsdatabaser/JOIN.png" alt="Modeller" width="500"/>
+  <img src="../Pictures/Relasjonsdatabaser/JOIN.png" alt="Modeller" width="600"/>
+</p>
+
+**Q: RegNr og Navn for hunder som har bitt Per som har PNr = 3**
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/Q2.png" alt="Modeller" width="600"/>
+</p>
+
+
+### Alternative løsninger
+- Gir samme resultat, varierer i effektivitet/kostnad
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/AltLos.png" alt="Modeller" width="600"/>
+</p>
+
+### Equijoin
+- Kombinerer rader basert på _likhet_
+  - Ett eller flere par av kolonner (fra hver sin operandtabell)
+- _Filterer vekk_ rader som ikke matcher
+  - Foto 4 (Nidaros) som har ukjent fotograf
+  - Foto 3 (Leibovitz) som ikke har Foto
+- **Alltid ett eller flere par kolonner med like verdier**
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/EquiJoin.png" alt="Modeller" width="600"/>
+</p>
+
+### Naturlig join
+- Som EQUIJOIN, men
+  - * som operatorsymbol
+  - _Implistitt_ join-betingelse
+    - Likhet i alle par av kolonner med like navn
+  - Fjerner alle "duplikatkolonner"
+- Tilsvarer
+  - Kartesisk produkt + seleksjon + projeksjon
+- Risiko
+  - Kan bli en "større" join-betingelse enn man ønsker
+  - Ved endringer i operand-tabellene kan join-betingelsen endre seg
+  <p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/NatJoin.png" alt="Modeller" width="200"/>
 </p>
