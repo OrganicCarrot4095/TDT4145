@@ -308,8 +308,36 @@ Her vil vi få en ny tabell kalt "Hundeeiere" som inneholder nundehavn og dens e
   <img src="../Pictures/Relasjonsdatabaser/Aggregering.png" alt="Modeller" width="500"/>
 </p>
 
+> Eksempel basert på tabellen over
 > - **count(*)** - antall rader (7)
 > - **count(distinctRase)** - antall unike raser (5)
 > - **max(Faar)** - 2020
 > - **avg(Faar)** - 2018.7
+
+**Q: Antall hunder pr rase**
+Gitt tabellen over kan vi benytte grupperingsoperatoren og så en ny tabell som viser antall hunder pr rase
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="../Pictures/Relasjonsdatabaser/Q6.1.png" alt="Innhold1" style="height: 250px; margin-right: auto;"/>
+  <img src="../Pictures/Relasjonsdatabaser/Q6.2.png" alt="Innhold2" style="height: 250px;"/>
+</div>
+
+Tankegang: 
+- Sorter tabellen på grupperingsattributtene (Rase)
+- Tell opp innen hver partisjon med samme verdi for grupperingsattributtene
+- Resultattabellen får en rad pr partisjon
+
+### Relasjonsalgebra kan uttrykke restriksjoner 
+- **Entitetintegritet:** Vi kan ikke ha to like rader i en tabell, og tillater derfor ikke NULL-verdier i
+primærnøkkelen, selv om den er flere attributter.
+
+  >$\sigma_{Antall > 1}$ ($\gamma_{Pnr}$, count(Navn) AS Antall(Person)) = $\phi$
+
+- **Referanseintegritet:**  Referansen mellom tupler i to ulike relasjoner må være riktig. Betyr at fremmednøklene i en relasjon må være et subset av primærnøklene til relasjonene de refererer til. 
+
+  > $\pi_{GjerningshundRegNr}$(BittAv) $\subseteq$ $\pi_{RegNr}$(Hund)
+  > $\pi_{OfferRegNr}$(BittAv) $\subseteq$ $\pi_{nmr}$(Person)
+  > $\pi_{EierPnr}$(Hund) $\subseteq$ $\pi_{Pnr}$(Person)
+
+- **Generelle restriksjoner**: Relasjonsalgebra kan også brukes for å uttrykke andre generelle restriksjoner, for eksempel at en hund kan bite maks 10 personer:
+  > $\sigma_{AntallOffer > 10}$ ($\gamma_{GjerningshundRegNr}$, count(OfferPnr) AS AntallOffer(BittAv)) = $\phi$
 
