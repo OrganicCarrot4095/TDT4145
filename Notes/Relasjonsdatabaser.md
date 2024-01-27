@@ -315,7 +315,8 @@ Her vil vi få en ny tabell kalt "Hundeeiere" som inneholder nundehavn og dens e
 > - **avg(Faar)** - 2018.7
 
 **Q: Antall hunder pr rase**
-Gitt tabellen over kan vi benytte grupperingsoperatoren og så en ny tabell som viser antall hunder pr rase
+
+Gitt tabellen over kan vi benytte grupperingsoperatoren og få en ny tabell som viser antall hunder pr rase
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="../Pictures/Relasjonsdatabaser/Q6.1.png" alt="Innhold1" style="height: 250px; margin-right: auto;"/>
   <img src="../Pictures/Relasjonsdatabaser/Q6.2.png" alt="Innhold2" style="height: 250px;"/>
