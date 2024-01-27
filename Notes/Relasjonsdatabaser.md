@@ -118,7 +118,7 @@ Fler-verdiattributt må (vanligvis) håndteres i en egen tabell, med en fremmed-
 - Legger inn et **type-attributt** i kategori-tabellen som viser hvilken super klasse hver kategori-entitet er.
 
 ## Relasjonsalgebra
-- Operasjon for _manipulere_ tabeller
+- Operasjoner for å _manipulere_ tabeller
   - Vi ser kun på spørrefunksjonalitet, ikke innsetting, endring eller sletting
   - Viktig grunnlag for å forstå hva man kan gjøre med tabeller, for normaliseringsteorien og for spørreoptimalisering og spørreutføring
 - Husk: Tabellforekomster er mengder av tuppler
@@ -289,6 +289,27 @@ Her vil vi få en ny tabell kalt "Hundeeiere" som inneholder nundehavn og dens e
 
 **Q: Finn RegNr, Navn, Rase og Navn på alle offerpersoner for alle hunder**
 <p align="center">
-  <img src="../Pictures/Relasjonsdatabaser/Q5.png" alt="Modeller" width="200"/>
+  <img src="../Pictures/Relasjonsdatabaser/Q5.png" alt="Modeller" width="500"/>
 </p>
+
+
+### Aggregering/gruppering
+- Aggregeringsfunksjoner
+  - SUM(<attributt>), AVG(), MIN(), MAX(), ...
+  - COUNT()
+    - count(<attributt>) - antall verdier, unntatt NULL 
+    - count(distinct <attributt>) - antall unike verdier, unntatt NULL
+    - count(*) - antall rader
+  - Gruppering
+    - Grupperingsattributtene definerer en _partisjonering_ av radene i tabellforekomsten.
+    - _Aggregeringen_ gjøres over radene i hver partisjonsom hver bidrar til _en rad_ i resultattabellen.
+    - Uten grupperingsattributter aggregeres det over alle radene i tabellen. 
+<p align="center">
+  <img src="../Pictures/Relasjonsdatabaser/Aggregering.png" alt="Modeller" width="500"/>
+</p>
+
+> - **count(*)** - antall rader (7)
+> - **count(distinctRase)** - antall unike raser (5)
+> - **max(Faar)** - 2020
+> - **avg(Faar)** - 2018.7
 
