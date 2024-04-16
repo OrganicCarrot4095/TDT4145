@@ -63,12 +63,12 @@ Arkitekturen til et typisk DBMS for kjøring av spørringer er vist i figuren ne
 
 1. Partisjonering
     - Sorterer deler (partisjoner) som får plass i RAM
-        - Antall deler (partisjoner): *$n_{R}$*
-        - Antall blokker av data: *$b$*
-        - Tilgjengelig buffer: *$n_{B}$*
+        - Antall deler (partisjoner): $n_{R}$
+        - Antall blokker av data: $b$
+        - Tilgjengelig buffer: $n_{B}$
 2. Fletting
     - Flett sammen sorterte delfiler i et antall pass
-    - Flettegrad *$d_{m}$* - antall delfiler som kan flettes i hvert pass
+    - Flettegrad $d_{m}$ - antall delfiler som kan flettes i hvert pass
     - Flettepass - antall pass som filene må flettes i
 
 Regner ut total I/O - antall blokker som leses/skrives
