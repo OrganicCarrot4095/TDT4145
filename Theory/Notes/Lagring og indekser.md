@@ -185,7 +185,7 @@
     - Level 0 - 2,3 mill blokker - 18 MB
 
 ## Poster i B+-trær
-    - Tabell: Student (*prn*, studnr, navn, adresse, epost)
+  - Tabell: Student (*prn*, studnr, navn, adresse, epost)
     - Clustered B+-tree
     - Løvnivå (level=0):
         - Hver post på løvnivå vil se slik ('010195 12345', 123456, 'Hans Hansen', 'Revekroken 1', 'hans@stud.ntnu.no')
