@@ -101,6 +101,7 @@ Fler-verdiattributt må (vanligvis) håndteres i en egen tabell, med en fremmed-
 <p align="center">
   <img src="../Pictures/Relasjonsdatabaser/Generalisering.png" alt="Modeller" width="500"/>
 </p>
+
 - Ingen egentlig støtte for dette
 - A: Både superklasser-tabell og subklasse-tabell
 - B: Bare subklasse-tabeller 
